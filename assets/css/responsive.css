@@ -75,7 +75,14 @@ mobile menu area here
     }
 
 }
-@media screen and (max-width: 768px){}
+@media screen and (max-width: 768px){
+    /*--------------------------------
+    customers carousel area ends here 
+    ----------------------------------*/
+    .customers-carousel-items .customers-Card {
+        padding: 0px 80px;
+    }
+}
 @media screen and (max-width: 576px){
     /*---------------------
     default  
@@ -86,10 +93,14 @@ mobile menu area here
         font-size: 30px;
         line-height: 45px;
     }
+    /* 
+    all vector none,
+    .customers-carousel-inner::after,
+    .img-vector-none,
+     */
     .img-vector-none{
         display: none;
     }
-
     /*--------------------------------
     header area here  
     ----------------------------------*/
@@ -139,7 +150,15 @@ mobile menu area here
         border: none;
         border-radius: 0;
     }
-
+    /*--------------------------------
+    customers carousel area here 
+    ----------------------------------*/
+    .customers-carousel-items .customers-Card {
+        padding: 0px 30px;
+    }
+    .customers-carousel-inner::after {
+        display: none;
+    }
 
 
 }
