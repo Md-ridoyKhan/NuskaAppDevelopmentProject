@@ -29,4 +29,10 @@ $(document).ready(function(){
         autoplayTimeout: 5000,
         smartSpeed: 2000
     });
-  });
+});
+// -----------------------
+// This will create a video gallery magnific popup
+// -----------------------
+$('.expand-video').magnificPopup({
+    type: 'iframe'
+});

@@ -1,7 +1,14 @@
 /*--------------------------------
 mobile menu area here  
 ----------------------------------*/
-@media screen and (max-width: 1366px){}
+@media screen and (max-width: 1366px){
+    /*--------------------------------
+    join area here  
+    ----------------------------------*/
+    .join br{
+        display: none;
+    }
+}
 @media screen and (max-width: 1200px){
     /*--------------------------------
     header area here  
@@ -13,7 +20,7 @@ mobile menu area here
 @media screen and (max-width: 1024px){}
 @media screen and (max-width: 991px){
     /*--------------------- 
-    default  
+    default 
     ----------------------*/
     br{
         display: none;
@@ -73,11 +80,27 @@ mobile menu area here
     div.nav-toggler {
         display: block;
     }
+    /*--------------------------------
+    join area ends here 
+    ----------------------------------*/
+    .join .join-content {
+        margin-bottom: var(--margin-bottom);
+    }
+    .join img.vector {
+        top: inherit;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .join ul.join-people {
+        margin-left: 0;
+        padding: 0px 70px;
+    }
 
 }
 @media screen and (max-width: 768px){
     /*--------------------------------
-    customers carousel area ends here 
+    customers carousel area here 
     ----------------------------------*/
     .customers-carousel-items .customers-Card {
         padding: 0px 80px;
