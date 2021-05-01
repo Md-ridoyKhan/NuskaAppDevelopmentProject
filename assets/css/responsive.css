@@ -19,7 +19,6 @@ mobile menu area here
         display: none;
     }
 
-    
     /*--------------------- 
     header area here  
     ----------------------*/
@@ -75,14 +74,6 @@ mobile menu area here
         display: block;
     }
 
-
-
-
-
-
-
-
-
 }
 @media screen and (max-width: 768px){}
 @media screen and (max-width: 576px){
@@ -90,7 +81,7 @@ mobile menu area here
     default  
     ----------------------*/
     .banner-content h1,
-    .whatCan .whatCan-title h1,
+    .whatCan-title h1,
     .app-dev-content .title h1 {
         font-size: 30px;
         line-height: 45px;
@@ -98,8 +89,6 @@ mobile menu area here
     .img-vector-none{
         display: none;
     }
-
-
 
     /*--------------------------------
     header area here  
@@ -125,8 +114,6 @@ mobile menu area here
     .header-content .nav > li {
         justify-content: start;
     }
-
-
     /*--------------------------------
     what can area here  
     ----------------------------------*/
@@ -134,13 +121,9 @@ mobile menu area here
     .whatCan .whatCan-img img {
         margin-top: -64px;
     }
-
-
     /*--------------------------------
     app development area here  
     ----------------------------------*/
-
-
     .app-dev-card {
         grid-template-columns: 1fr;
         grid-gap: 20px;

@@ -257,10 +257,9 @@ whatCan area here
 }
 .whatCan .vector {
     width: 36px;
-    height: auto;
     position: absolute;
-    top: 140px;
-    right: calc(90%);
+    top: calc(150px);
+    left: calc(120px);
 }
 .whatCan .whatCan-img{}
 .whatCan .whatCan-img img {
@@ -268,17 +267,17 @@ whatCan area here
     margin-top: -364px;
     position: relative;
 }
-.whatCan .whatCan-title {
+.whatCan-title {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 80px 0px;
 }
-.whatCan .whatCan-title h1 {
+.whatCan-title h1 {
     line-height: 60px;
     margin-bottom: 20px;
 }
-.whatCan .whatCan-title p {
+.whatCan-title p {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 0px;
@@ -312,8 +311,6 @@ app area here
     transform: translateY(-50%);
     z-index: -1;
 }
-
-
 .app-dev-content{
     margin-bottom: var(--margin-bottom);
 }
@@ -397,6 +394,25 @@ app area here
     font-weight: 400;
     line-height: 28px;
 }
+/*--------------------------
+what our area here
+----------------------------*/
+.what-our {
+    background: var(--banner-color);
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 1;
+}
+.what-our img.vector {
+    width: 84px;
+    position: absolute;
+    top: calc(150px);
+    left: calc(170px);
+    z-index: -1;
+}
+.what-our .whatCan-title{}
+.what-our .whatCan-title h1{}
+.what-our .whatCan-title p{}
 
 
 
