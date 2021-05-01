@@ -1,0 +1,158 @@
+/*--------------------------------
+mobile menu area here  
+----------------------------------*/
+@media screen and (max-width: 1366px){}
+@media screen and (max-width: 1200px){
+    /*--------------------------------
+    header area here  
+    ----------------------------------*/
+    .header-content .nav > li:last-child {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1024px){}
+@media screen and (max-width: 991px){
+    /*--------------------- 
+    default  
+    ----------------------*/
+    br{
+        display: none;
+    }
+
+    
+    /*--------------------- 
+    header area here  
+    ----------------------*/
+    .header-content {
+        height: 150px;
+    }
+    .header-content .nav {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 500px;
+        height: auto;
+        background: var(--dark);
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 0px 40px;
+        transition: all .5s ease;
+    }
+    .header-content .nav.active{
+        left: 0;
+    }
+    .header-content .nav > li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .header-content .nav > li > a {
+        padding: 10px 20px;
+        color: var(--main-color);
+    }
+    .header-content .nav > li > a:hover, .header-content .nav > li:nth-child(4) > a:hover::after {
+        color: var(--white);
+    }
+    .header-content .nav > li:last-child {
+        padding: 30px 20px;
+    }
+    /* form-header here   */
+    .form-header form {
+        width: 100%;
+    }
+    .form-header form input {
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+        height: 60px;
+        border: 1px solid var(--border-color);
+        outline: none;
+        padding: 0px 120px 0px 20px;
+    }
+    /* nav here   */
+    div.nav-toggler {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 768px){}
+@media screen and (max-width: 576px){
+    /*---------------------
+    default  
+    ----------------------*/
+    .banner-content h1,
+    .whatCan .whatCan-title h1,
+    .app-dev-content .title h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .img-vector-none{
+        display: none;
+    }
+
+
+
+    /*--------------------------------
+    header area here  
+    ----------------------------------*/
+    .header {
+        padding: 0px 15px 0px;
+    }
+    .header-content .nav {
+        width: 100%;
+    }
+    .banner-inner .banner-vector {
+        display: none;
+    }
+    .banner-content h1 {
+        margin-bottom: 30px;
+        line-height: 45px;
+        font-size: 30px;
+    }
+    .header-content .nav {
+        display: block;
+        top: 0;
+    }
+    .header-content .nav > li {
+        justify-content: start;
+    }
+
+
+    /*--------------------------------
+    what can area here  
+    ----------------------------------*/
+
+    .whatCan .whatCan-img img {
+        margin-top: -64px;
+    }
+
+
+    /*--------------------------------
+    app development area here  
+    ----------------------------------*/
+
+
+    .app-dev-card {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .app-dev-card li:nth-child(1) {
+        grid-row: auto;
+    }
+    .app-dev-card li:nth-child(2) {
+        grid-row: auto;
+    }
+
+
+
+
+}
