@@ -302,33 +302,77 @@ app area here
 ----------------------------*/
 .app-dev {
     padding: 120px 0px;
+    position: relative;
+    overflow: hidden;
 }
-.app-dev-content{}
+.app-dev > img.vactor {
+    position: absolute;
+    top: 50%;
+    left: calc(70% - 150px);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+
+.app-dev-content{
+    margin-bottom: var(--margin-bottom);
+}
 .app-dev-content .title{}
-.app-dev-content .title h1{}
-.app-dev-content .title p{
+.app-dev-content .title h1 {
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.app-dev-content .title p {
     font-size: 18px;
     font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 0;
 }
-.app-dev-content .card{}
+.app-dev-content li {
+    margin-bottom: 30px;
+}
+.app-dev-content li:last-child {
+    margin-bottom: 0px;
+}
+.app-dev-content .card {
+    margin-right: 120px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+}
 .app-dev-content .card img {
     width: 40px;
+    margin-bottom: 20px;
 }
-.app-dev-content .card h4{
+.app-dev-content .card h4 {
     font-size: 24px;
     font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 20px;
 }
-.app-dev-content .card p{
+.app-dev-content .card p {
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 0;
+    line-height: 28px;
 }
 .app-dev-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
     align-items: center;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
 }
-.app-dev-card li{}
+.app-dev-card li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 40px 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0px 30px rgb(0 0 0 / 30%);
+}
 .app-dev-card li:nth-child(1) {
     grid-row: 1 / 2;
 }
@@ -339,14 +383,19 @@ app area here
 
 .app-dev-card li.card img {
     width: 59px;
+    margin-bottom: 20px;
 }
-.app-dev-card li.card h4{
+.app-dev-card li.card h4 {
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 28px;
+    text-transform: capitalize;
 }
-.app-dev-card li.card p{
+.app-dev-card li.card p {
     font-size: 16px;
     font-weight: 400;
+    line-height: 28px;
 }
 
 

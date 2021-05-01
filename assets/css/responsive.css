@@ -151,7 +151,11 @@ mobile menu area here
     .app-dev-card li:nth-child(2) {
         grid-row: auto;
     }
-
+    .app-dev-content .card {
+        margin-right: 0;
+        border: none;
+        border-radius: 0;
+    }
 
 
 

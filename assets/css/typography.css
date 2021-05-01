@@ -6,6 +6,11 @@
     font-family: 'Poppins', sans-serif;
 
 }
+.row {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
 ul{
     margin-bottom: 0px;
     padding-left: 0px;
@@ -49,4 +54,7 @@ h4{
     --dark: #0c1023;
     --dark-light: #191f3a;
     --border-color: #e1e1e1;
+}
+:root{
+    --margin-bottom: 70px;
 }
