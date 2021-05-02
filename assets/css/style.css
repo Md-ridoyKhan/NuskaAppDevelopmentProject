@@ -609,25 +609,298 @@ Customers carousel area here
 .video .video-inner a img {
     width: 63px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------------------------
+------------recentPost area here
+----------------------------*/
+.recent-post {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0px 120px;
+}
+.recent-post img.vector {
+    width: 84px;
+    position: absolute;
+    left: calc(89%);
+    top: 150px;
+}
+.recent-post .whatCan-title{}
+.recent-post .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.recent-post .cards div.card {
+    background: var(--banner-color);
+    border: 1px solid #e1e1e1;
+    border-radius: 0px;
+    padding: 80px 50px 80px;
+}
+.recent-post .card a:nth-child(1) {
+    margin-bottom: 30px;
+}
+.recent-post .card a:nth-child(1) button {
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    background: var(--main-color);
+    color: var(--white);
+    text-transform: capitalize;
+    padding: 15px 30px;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.recent-post .card a:nth-child(1) button:hover {
+    color: var(--main-color);
+    background: var(--dark);
+}
+.recent-post .cards div.card h4 {
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.recent-post .cards div.card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.recent-post .card a:nth-child(4){}
+.recent-post .card a:nth-child(4) span {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.recent-post .card a:nth-child(4) span:hover {
+    color: var(--dark);
+}
+.recent-post .card a:nth-child(4) span::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f067";
+    font-size: 18px;
+    margin-left: 8px;
+}
+.recent-post .card:nth-child(1){}
+.recent-post .card:nth-child(2){}
+/*--------------------------
+------------subscribe area here
+----------------------------*/
+.subscribe {
+    background: var(--main-color);
+    padding: 30px 0px;
+}
+.subscribe .subscribe-content{}
+.subscribe .subscribe-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+.subscribe .subscribe-content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: var(--white);
+}
+.subscribe .subscribe-email {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.subscribe-email .subscribe-form {
+    display: flex;
+    justify-content: flex-end;
+}
+.subscribe-email .subscribe-form form{}
+.subscribe-email .subscribe-form form .form-button {
+    background: var(--sweet-btn);
+    font-size: 18px;
+    font-weight: 600;
+}
+.subscribe-email .subscribe-form form .form-button:hover{
+    background: var(--dark);
+    font-size: 18px;
+    font-weight: 600;
+}
+/*--------------------------
+------------footer area here
+----------------------------*/
+.footer {
+    background: var(--dark);
+    padding: 120px 0px;
+}
+.footer p,
+.footer a,
+.footer i{
+    color: var(--white);
+}
+/*address area*/
+.footer .address {}
+.footer .address img{}
+.footer .address hr {
+    background: var(--white);
+    height: 2px;
+    opacity: 1;
+    margin: 20px 0px 30px;
+    width: 80%;
+}
+.footer .address .content{}
+.footer .address .content p:first-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.footer .address .content p br{}
+.footer .address .content a {
+    display: block;
+    margin-bottom: 0;
+}
+.footer .address .content a span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+.footer .address .content a span::before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.footer .address .content p:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.footer ul.icon {
+    display: flex;
+}
+.footer ul.icon li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    cursor: pointer;
+}
+.footer ul.icon li:hover{
+    border: 1px solid transparent;
+    background: var(--main-color);
+}
+.footer ul.icon li:hover i{
+    color: var(--white);
+}
+.footer ul.icon li a {
+    display: block;
+}
+.footer ul.icon li a i {
+    font-size: 14px;
+    color: var(--main-color);
+}
+/*our courses area*/
+.footer .our-courses{}
+.footer .our-courses h4,
+.footer .recent-news h4,
+.footer .flickr-photos h4{
+    text-transform: capitalize;
+    color: var(--white);
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.footer .our-courses ul{}
+.footer .our-courses ul li {
+    margin-bottom: 10px;
+}
+.footer .our-courses ul li:last-child {
+    margin-bottom: 0px;
+}
+.footer .our-courses ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.footer .our-courses ul li a:hover{
+    color: var(--main-color);
+}
+/*recent-news area*/
+.recent-news{}
+.recent-news br{
+    display: none;
+}
+.recent-news ul{}
+.recent-news ul li {
+    display: flex;
+    margin-bottom: 20px;
+}
+.recent-news ul li img {
+    width: 62px;
+    height: 63px;
+    border-radius: 8px;
+}
+.recent-news ul li div.content {
+    margin-left: 20px;
+}
+.recent-news ul li div.content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    cursor: pointer;
+}
+.recent-news ul li div.content p:hover{
+    color: var(--main-color);
+}
+.recent-news ul li div.content span {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 400;
+}
+/*flickr photos area*/
+.flickr-photos{}
+.flickr-photos ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+.flickr-photos ul li{
+    overflow: hidden;
+}
+.flickr-photos ul li a {
+    display: block;
+}
+.flickr-photos ul li a img {
+    width: 100%;
+}
 
 

@@ -3,9 +3,11 @@ mobile menu area here
 ----------------------------------*/
 @media screen and (max-width: 1366px){
     /*--------------------------------
-    join area here  
+    join area here,  
+    recentPost area ends here
     ----------------------------------*/
-    .join br{
+    .join br,
+    .recent-post .cards div.card h4 br{
         display: none;
     }
 }
@@ -22,10 +24,10 @@ mobile menu area here
     /*--------------------- 
     default 
     ----------------------*/
-    br{
+    .banner br,
+    .whatCan-title p br{
         display: none;
     }
-
     /*--------------------- 
     header area here  
     ----------------------*/
@@ -96,6 +98,25 @@ mobile menu area here
         margin-left: 0;
         padding: 0px 70px;
     }
+    /*--------------------------------
+    recentPost area ends here 
+    ----------------------------------*/
+    .recent-post .cards {
+        grid-template-columns: 1fr;
+    }
+    /*--------------------------------
+    subscribe area here 
+    ----------------------------------*/
+    .subscribe .subscribe-content {
+        margin-bottom: 40px;
+    }
+    /*--------------------------------
+    footer area here 
+    ----------------------------------*/
+    .footer .order:nth-child(1),
+    .footer .order:nth-child(2){
+        margin-bottom: 70px;
+    }
 
 }
 @media screen and (max-width: 768px){
@@ -105,6 +126,13 @@ mobile menu area here
     .customers-carousel-items .customers-Card {
         padding: 0px 80px;
     }
+    /*--------------------------------
+    footer area here 
+    ----------------------------------*/
+    .footer .order:nth-child(3){
+        margin-bottom: 70px;
+    }
+
 }
 @media screen and (max-width: 576px){
     /*---------------------
@@ -112,7 +140,8 @@ mobile menu area here
     ----------------------*/
     .banner-content h1,
     .whatCan-title h1,
-    .app-dev-content .title h1 {
+    .app-dev-content .title h1,
+    .join .join-content h1{
         font-size: 30px;
         line-height: 45px;
     }
@@ -151,7 +180,6 @@ mobile menu area here
     /*--------------------------------
     what can area here  
     ----------------------------------*/
-
     .whatCan .whatCan-img img {
         margin-top: -64px;
     }
@@ -182,6 +210,19 @@ mobile menu area here
     .customers-carousel-inner::after {
         display: none;
     }
-
-
+    /*--------------------------------
+    recent-post area here 
+    ----------------------------------*/
+    .recent-post .cards div.card {
+        padding: 80px 20px 80px;
+    }
+    .recent-post .card a:nth-child(1) button {
+        font-size: 16px;
+    }
+    /*--------------------------------
+    subscribe area here 
+    ----------------------------------*/
+    .subscribe .subscribe-content h2 {
+        margin-bottom: 20px;
+    }
 }
