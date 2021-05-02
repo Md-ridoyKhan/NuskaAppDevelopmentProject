@@ -94,7 +94,7 @@ ul.sub-menu li a {
     font-weight: 500;
     text-transform: capitalize;
     color: var(--dark);
-    padding: 20px;
+    padding: 6px 20px;
     transition: all .5s ease;
     -o-transition: all .5s ease;
     -ms-transition: all .5s ease;
