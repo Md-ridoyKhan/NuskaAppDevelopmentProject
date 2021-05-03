@@ -35,7 +35,7 @@ mobile menu area here
         height: 150px;
     }
     .header-content .nav {
-        display: block;
+        display: grid;
         position: absolute;
         top: 100%;
         left: -100%;
@@ -47,13 +47,32 @@ mobile menu area here
         padding: 40px 0px 40px;
         transition: all .5s ease;
     }
-    .header-content .nav.active{
+    .header-content .nav.active {
         left: 0;
     }
-    .header-content .nav > li {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .header-content .nav li:nth-child(1) {
+        order: 2;
+    }
+    .header-content .nav li:nth-child(2) {
+        order: 3;
+    }
+    .header-content .nav li:nth-child(3) {
+        order: 4;
+    }
+    .header-content .nav li:nth-child(4) {
+        order: 5;
+    }
+    .header-content .nav li:nth-child(5) {
+        order: 1;
+    }
+    ul.sub-menu {
+        margin-left: 20px;
+    }
+    .header-content .nav > li:hover ul.sub-menu {
+        position: relative;
+        width: fit-content;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .header-content .nav > li > a {
         padding: 10px 20px;
@@ -61,6 +80,11 @@ mobile menu area here
     }
     .header-content .nav > li > a:hover, .header-content .nav > li:nth-child(4) > a:hover::after {
         color: var(--white);
+    }
+    .header-content .nav > li:nth-child(4) > a::after {
+        content: "+";
+        color: var(--main-color);
+        transition: all 0.5s ease 0s;
     }
     .header-content .nav > li:last-child {
         padding: 30px 20px;
@@ -224,5 +248,11 @@ mobile menu area here
     ----------------------------------*/
     .subscribe .subscribe-content h2 {
         margin-bottom: 20px;
+    }
+    /*--------------------------------
+    footer area here 
+    ----------------------------------*/
+    .footer .address hr {
+        width: auto;
     }
 }

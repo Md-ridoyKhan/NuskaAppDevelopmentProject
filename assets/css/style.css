@@ -1,4 +1,7 @@
 /*--------------------------
+#######---index area---########
+----------------------------*/
+/*--------------------------
 header area here
 ----------------------------*/
 .header {
@@ -10,9 +13,11 @@ header area here
     height: 120px;
     display: flex;
     align-items: center;
+    transition: all .2s ease;
 }
 .header.active {
-    background: #453971;
+    box-shadow: 0 0 15px rgb(238 40 91 / 50%);
+    background: #fff;
 }
 .header-content {
     display: flex;
@@ -47,7 +52,7 @@ header area here
 .header-content .nav > li > a:hover, .header-content .nav > li:nth-child(4) > a:hover::after{
     color: var(--main-color);
 }
-.header-content .nav > li:nth-child(4) > a::after{
+.header-content .nav > li:nth-child(4) > a::after {
     content: '\002B';
     color: var(--dark);
     transition: all .5s ease;
@@ -57,7 +62,7 @@ ul.sub-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 20px 0px;
+    padding: 10px 0px 25px;
     width: 320px;
     background: var(--main-color);
     transform: scaleY(0);
@@ -75,7 +80,7 @@ ul.sub-menu {
     -ms-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 15px rgb(238 40 91 / 50%);
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -90,10 +95,10 @@ ul.sub-menu {
 ul.sub-menu li{}
 ul.sub-menu li a {
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
-    color: var(--dark);
+    color: var(--white);
     padding: 6px 20px;
     transition: all .5s ease;
     -o-transition: all .5s ease;
@@ -102,7 +107,7 @@ ul.sub-menu li a {
     -webkit-transition: all .5s ease;
 }
 ul.sub-menu li a:hover {
-    color: var(--white);
+    color: var(--dark);
 }
 /* header form and banner form area here  */
 .form-header form{
@@ -261,7 +266,9 @@ whatCan area here
     top: calc(150px);
     left: calc(120px);
 }
-.whatCan .whatCan-img{}
+.whatCan .whatCan-img {
+    margin-bottom: var(--margin-bottom);
+}
 .whatCan .whatCan-img img {
     width: 100%;
     margin-top: -364px;
@@ -271,7 +278,7 @@ whatCan area here
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 80px 0px;
+    margin: 0px 0px 80px;
 }
 .whatCan-title h1 {
     line-height: 60px;
@@ -399,7 +406,7 @@ customers area here
 ----------------------------*/
 .customers {
     background: var(--banner-color);
-    padding-bottom: 150px;
+    padding: 120px 0px 150px;
     position: relative;
     z-index: 1;
 }
@@ -615,7 +622,7 @@ Customers carousel area here
 .recent-post {
     position: relative;
     overflow: hidden;
-    padding: 40px 0px 120px;
+    padding: 120px 0px;
 }
 .recent-post img.vector {
     width: 84px;
@@ -851,9 +858,7 @@ Customers carousel area here
 }
 /*recent-news area*/
 .recent-news{}
-.recent-news br{
-    display: none;
-}
+.recent-news br{}
 .recent-news ul{}
 .recent-news ul li {
     display: flex;
@@ -862,13 +867,15 @@ Customers carousel area here
 .recent-news ul li img {
     width: 62px;
     height: 63px;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .recent-news ul li div.content {
     margin-left: 20px;
 }
-.recent-news ul li div.content p {
+.recent-news ul li div.content a {
+    display: block;
     font-size: 16px;
+    line-height: 22px;
     font-weight: 400;
     margin-bottom: 10px;
     transition: all .5s ease;
@@ -878,13 +885,14 @@ Customers carousel area here
     -webkit-transition: all .5s ease;
     cursor: pointer;
 }
-.recent-news ul li div.content p:hover{
+.recent-news ul li div.content a:hover{
     color: var(--main-color);
 }
-.recent-news ul li div.content span {
+.recent-news ul li div.content p {
     color: var(--white);
     font-size: 12px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 /*flickr photos area*/
 .flickr-photos{}
@@ -893,14 +901,129 @@ Customers carousel area here
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
 }
-.flickr-photos ul li{
+.flickr-photos ul li {
     overflow: hidden;
 }
 .flickr-photos ul li a {
     display: block;
+    width: 100%;
+    height: 100%;
 }
 .flickr-photos ul li a img {
     width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
 }
+.flickr-photos ul li a img:hover {
+    transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+/*--------------------------
+#######---index area ends here---########
+----------------------------*/
+/*--------------------------
+#######---blog home area here---########
+----------------------------*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------
+#######---blog home area ends here---########
+----------------------------*/
