@@ -1,13 +1,14 @@
 /*--------------------------------
 mobile menu area here  
 ----------------------------------*/
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1400px){
     /*--------------------------------
     join area here,  
     recentPost area ends here
     ----------------------------------*/
     .join br,
-    .recent-post .cards div.card h4 br{
+    .recent-post .cards div.card h4 br,
+    .blog-right br{
         display: none;
     }
 }
@@ -17,6 +18,15 @@ mobile menu area here
     ----------------------------------*/
     .header-content .nav > li:last-child {
         margin-left: 0px;
+    }
+    /*--------------------------
+    #######---blog home area here---########
+    ----------------------------*/
+    /*--------------------------------
+    home-Masonry area here 
+    ----------------------------------*/
+    .home-Masonry .Masonry {
+        columns: 2;
     }
 }
 @media screen and (max-width: 1024px){}
@@ -141,7 +151,25 @@ mobile menu area here
     .footer .order:nth-child(2){
         margin-bottom: 70px;
     }
-
+    /*--------------------------
+    #######---blog home area here---########
+    ----------------------------*/
+    /*--------------------------------
+    home-Masonry area here 
+    ----------------------------------*/
+    .home-Masonry .Masonry {
+        columns: 1;
+    }
+    /*--------------------------
+    #######---blog right home area here---########
+    ----------------------------*/
+    /*-----------------------
+    blog right area here
+    -------------------------*/
+    /* blog-right-right  */
+    .blog-right-right {
+        margin-bottom: 120px;
+    }
 }
 @media screen and (max-width: 768px){
     /*--------------------------------
@@ -254,5 +282,38 @@ mobile menu area here
     ----------------------------------*/
     .footer .address hr {
         width: auto;
+    }
+    /*--------------------------
+    #######---blog home area here---########
+    ----------------------------*/
+    /*--------------------------------
+    banner-blog area here
+    ----------------------------------*/
+    .banner-blog ul.breadcumb li {
+        font-size: 26px;
+    }
+    /*--------------------------------
+    home-Masonry area here
+    ----------------------------------*/
+    .home-Masonry br{
+        display: none;
+    }
+    .home-Masonry .card {
+        margin: 0 0 30px;
+    }
+    .home-Masonry .card ul.data span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    /*--------------------------
+    #######---blog home area here---########
+    ----------------------------*/
+    /*--------------------------------
+    home-card area here
+    ----------------------------------*/
+    .home-card .card ul.data span {
+        font-size: 10px;
     }
 }

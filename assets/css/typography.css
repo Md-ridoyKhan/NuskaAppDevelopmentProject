@@ -20,12 +20,12 @@ ul li{
 }
 a{
     font-family: 'Poppins', sans-serif;
-    color: #000000;
+    color: var(--dark);
     text-decoration: none;
 }
-p{
+p {
     font-family: 'Poppins', sans-serif;
-    color: #000000;
+    color: var(--dark);
 }
 h1,
 h2,
@@ -34,15 +34,16 @@ h4,
 h5,
 h6{
     font-family: 'Poppins', sans-serif;
-    color: #000000;
+    color: var(--dark);
 }
 h1{
     font-size: 48px;
     font-weight: 600;
 }
-h4{
+h4 {
     font-size: 24px;
     font-weight: 600;
+    line-height: 30px;
 }
 :root{
     /* "--r" rgb color code with alpha RGBA(238, 40, 91, 80%) */
