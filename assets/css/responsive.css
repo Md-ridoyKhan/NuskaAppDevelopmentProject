@@ -8,7 +8,7 @@ mobile menu area here
     ----------------------------------*/
     .join br,
     .recent-post .cards div.card h4 br,
-    .blog-right br{
+    .blog-right-right .content h2 br{
         display: none;
     }
 }
@@ -166,10 +166,18 @@ mobile menu area here
     /*-----------------------
     blog right area here
     -------------------------*/
+    .blog-right .blogs-right{
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+    }
     /* blog-right-right  */
     .blog-right-right {
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
+    /* blog-left area here  */
+    .blog-right .blogs-left{
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+    }
+
 }
 @media screen and (max-width: 768px){
     /*--------------------------------
@@ -267,9 +275,6 @@ mobile menu area here
     ----------------------------------*/
     .recent-post .cards div.card {
         padding: 80px 20px 80px;
-    }
-    .recent-post .card a:nth-child(1) button {
-        font-size: 16px;
     }
     /*--------------------------------
     subscribe area here 

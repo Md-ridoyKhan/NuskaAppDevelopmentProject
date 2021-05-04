@@ -157,6 +157,8 @@ div.nav-toggler {
     background: var(--main-color);
     position: relative;
     display: none;
+    cursor: pointer;
+    transition: all .5s ease;
 }
 div.nav-toggler span {
     height: 3px;
@@ -442,7 +444,7 @@ Customers carousel area here
 }
 .customers-carousel-inner::before {
     content: '';
-    background-color: rgba(238, 40, 91, 90%);
+    background: rgba(238, 40, 91, 88%);
     position: absolute;
     top: 0;
     left: 0px;
@@ -563,7 +565,7 @@ Customers carousel area here
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(238, 40, 91, 90%);
+    background: rgba(238, 40, 91, 88%);
     z-index: -1;
 }
 .video .video-inner {
@@ -641,25 +643,24 @@ Customers carousel area here
     border: 1px solid #e1e1e1;
     border-radius: 0px;
     padding: 80px 50px 80px;
+    display: block;
 }
 .recent-post .card a:nth-child(1) {
-    margin-bottom: 30px;
-}
-.recent-post .card a:nth-child(1) button {
     font-size: 18px;
     font-weight: 500;
-    border: none;
     background: var(--main-color);
     color: var(--white);
+    margin-bottom: 30px;
+    display: inline-block;
     text-transform: capitalize;
-    padding: 15px 30px;
+    padding: 17px 23px;
     transition: all .5s ease;
     -o-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
 }
-.recent-post .card a:nth-child(1) button:hover {
+.recent-post .card a:nth-child(1):hover {
     color: var(--main-color);
     background: var(--dark);
 }
@@ -951,7 +952,8 @@ banner-blog area here
     justify-content: center;
     align-items: center;
 }
-.banner-blog ul.breadcumb li {
+.banner-blog ul.breadcumb li h4,
+.banner-blog ul.breadcumb li a{
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
@@ -1083,6 +1085,9 @@ blog right area here
 .blog-right{
     padding: 120px 0px;
 }
+.blog-right .blogs-right{
+    padding-right: 30px;
+}
 .blog-right-right{}
 .blog-right-right .card {
     border: none;
@@ -1098,14 +1103,10 @@ blog right area here
 .blog-right-right .thumb img {
     width: 100%;
 }
-.blog-right-right .thumb a {
+.blog-right-right .thumb a{
     position: absolute;
     left: 0;
     bottom: 0;
-}
-.blog-right-right .thumb a button {
-    border: none;
-    outline: none;
     background: var(--main-color);
     color: var(--white);
     font-size: 18px;
@@ -1117,7 +1118,7 @@ blog right area here
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
 }
-.blog-right-right .thumb a button:hover{
+.blog-right-right .thumb a:hover{
     background: var(--dark);
     color: var(--main-color);
 }
@@ -1256,7 +1257,7 @@ blog right area here
     justify-content: center;
 }
 .blog-right-left .jonny .content .icon li {
-    padding: 0px 15px;
+    padding: 0px 10px;
 }
 .blog-right-left .jonny .content .icon li a {
     color: var(--f-placeholder);
@@ -1267,7 +1268,9 @@ blog right area here
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
 }
-.blog-right-left .jonny .content .icon li a:hover {
+.blog-right-left .jonny .content .icon li a:hover,
+.blog-right-left .jonny .content .icon li a.active
+{
     color: var(--main-color);
 }
 .blog-right-left .jonny .content .icon li a i{}
@@ -1331,11 +1334,88 @@ blog right area here
 /*--------------------------
 #######---blog-left area here---########
 ----------------------------*/
-.blog-left {}
 .blog-left .row {
     display: flex;
     flex-direction: row-reverse;
 }
+.blog-right .blogs-left{
+    padding-left: 30px;
+}
 /*--------------------------
 #######---blog-left area ends here---########
 ----------------------------*/
+
+
+/*--------------------------
+#######---blog-details area here---########
+----------------------------*/
+/* tst area here  */
+.blog-details .tst-content {
+    display: inline-block;
+    margin: 40px 120px 0px 0px;
+}
+.blog-details .tst-content .content {
+    background: var(--main-color);
+    padding: 50px 70px 60px;
+}
+.blog-details .tst-content .content p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 0px;
+}
+.blog-details .tst-content .img{}
+.blog-details .tst-content .img img {
+    display: block;
+    max-width: 68px;
+    margin: -30px auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------
+#######---blog-details area ends here---########
+----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
