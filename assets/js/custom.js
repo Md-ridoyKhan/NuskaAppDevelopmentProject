@@ -1,6 +1,21 @@
 // -----------> javaScript
+
 // -----------------------
-// header area ends here
+// preloader area here 
+// ------------------------ 
+
+$(window).on("load", function(){
+    $(".preloder").fadeOut(1000);
+});
+
+
+
+// -----------------------
+// preloader area ends here 
+// ------------------------ 
+
+// -----------------------
+// header area here
 // ------------------------ 
 const headerMenu = document.querySelector(".header");
 const www = document.querySelector(".header-content .nav > li > a");
@@ -15,7 +30,6 @@ window.onscroll = ()=>{
     headerMenu.classList.add("active"):
     headerMenu.classList.remove("active");
 }
-
 
 // -----------> Jquery
 // -----------------------
