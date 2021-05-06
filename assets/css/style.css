@@ -1533,10 +1533,10 @@ blog right area here
 ul.comments {
     margin-top: 70px;
 }
-ul.comments .title {
+ul.comments .title-comment {
     margin-bottom: 40px;
 }
-ul.comments .title h4 {
+ul.comments .title-comment h4 {
     font-weight: 600;
     line-height: 28px;
     margin-bottom: 0px;
