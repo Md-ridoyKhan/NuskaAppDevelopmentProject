@@ -262,6 +262,13 @@ mobile menu area here
     .header-content .nav > li {
         justify-content: start;
     }
+
+
+
+
+    .banner-blog ul.breadcumb li h4, .banner-blog ul.breadcumb li a {
+        font-size: 20px;
+    }
     /*--------------------------------
     what can area here  
     ----------------------------------*/

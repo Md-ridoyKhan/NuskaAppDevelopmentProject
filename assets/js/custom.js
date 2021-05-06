@@ -3,6 +3,7 @@
 // header area ends here
 // ------------------------ 
 const headerMenu = document.querySelector(".header");
+const www = document.querySelector(".header-content .nav > li > a");
 const navToggle = document.querySelector(".nav-toggler");
 const navigation = document.querySelector("ul.nav");
 navToggle.onclick = ()=>{
@@ -14,6 +15,7 @@ window.onscroll = ()=>{
     headerMenu.classList.add("active"):
     headerMenu.classList.remove("active");
 }
+
 
 // -----------> Jquery
 // -----------------------
