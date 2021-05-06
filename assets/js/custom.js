@@ -3,13 +3,10 @@
 // -----------------------
 // preloader area here 
 // ------------------------ 
-
+// jquery 
 $(window).on("load", function(){
     $(".preloder").fadeOut(1000);
 });
-
-
-
 // -----------------------
 // preloader area ends here 
 // ------------------------ 

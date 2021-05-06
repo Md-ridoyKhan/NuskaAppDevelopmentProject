@@ -217,9 +217,6 @@ mobile menu area here
     .tag-wrap ul li {
         margin: 0px 20px 30px 0px;
     }
-
-
-
 }
 @media screen and (max-width: 576px){
     /*---------------------
@@ -262,10 +259,6 @@ mobile menu area here
     .header-content .nav > li {
         justify-content: start;
     }
-
-
-
-
     .banner-blog ul.breadcumb li h4, .banner-blog ul.breadcumb li a {
         font-size: 20px;
     }
