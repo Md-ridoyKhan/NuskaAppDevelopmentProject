@@ -2,17 +2,45 @@
 mobile menu area here  
 ----------------------------------*/
 @media screen and (max-width: 1400px){
-    /*--------------------------------
-    join area here,  
-    recentPost area ends here
-    ----------------------------------*/
-    .join br,
-    .recent-post .cards div.card h4 br,
-    .blog-right-right .content h2 br{
+    /* header area here  */
+    .banner {
+        padding: 220px 0px 120px;
+    }
+    .banner-content h1,
+    .app-dev-content .title h1 ,
+    .join .join-content h1 {
+        line-height: 60px;
+        margin-bottom: 30px;
+        font-size: 45px;
+    }
+    .whatCan-title h1 {
+        font-size: 45px;
+    }
+    /* wharCan area here  */
+    .whatCan .whatCan-img img {
+        margin-top: -310px;
+    }
+    .recent-post .cards div.card h4 br{
         display: none;
     }
 }
 @media screen and (max-width: 1200px){
+    /* banner area here  */
+    .banner {
+        padding: 200px 0px 120px;
+    }
+    .banner-content h1,
+    .whatCan-title h1,
+    .app-dev-content .title h1,
+    .join .join-content h1  {
+        line-height: 50px;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    /* wharCan area here  */
+    .whatCan .whatCan-img img {
+        margin-top: -290px;
+    }
     /*--------------------------------
     header area here  
     ----------------------------------*/
@@ -28,15 +56,19 @@ mobile menu area here
     .home-Masonry .Masonry {
         columns: 2;
     }
+    /* blog right area here  */
+    .blog-right-right .content h2 {
+        font-size: 24px;
+        line-height: 40px;
+        margin: 30px 0px 20px;
+    }
 }
-@media screen and (max-width: 1024px){}
 @media screen and (max-width: 991px){
-    /*--------------------- 
-    default 
-    ----------------------*/
-    .banner br,
-    .whatCan-title p br{
-        display: none;
+    /* index h1  */
+    .banner-content h1, .whatCan-title h1, .app-dev-content .title h1, .join .join-content h1 {
+        line-height: 45px;
+        font-size: 30px;
+        margin-bottom: 18px;
     }
     /*--------------------- 
     header area here  
@@ -135,6 +167,13 @@ mobile menu area here
         margin-left: 0;
         padding: 0px 70px;
     }
+    /* wharCan area here  */
+    .whatCan .what-card {
+        margin-bottom: 40px;
+    }
+    .whatCan .row:last-child div:last-child .what-card {
+        margin-bottom: 0px;
+    }
     /*--------------------------------
     recentPost area ends here 
     ----------------------------------*/
@@ -192,9 +231,17 @@ mobile menu area here
         max-width: 100%;
         margin-bottom: 120px;
     }
-
 }
 @media screen and (max-width: 768px){
+    /*-------------
+    all vector none and br none
+     ------------------*/
+     .img-vector-none{
+        display: none;
+    }
+    br {
+        display: none;
+    }
     /*--------------------------------
     customers carousel area here 
     ----------------------------------*/
@@ -204,8 +251,10 @@ mobile menu area here
     /*--------------------------------
     footer area here 
     ----------------------------------*/
+    .footer .order:nth-child(1),
+    .footer .order:nth-child(2),
     .footer .order:nth-child(3){
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
     /*--------------------------
     #######---blog-details area here---########
@@ -222,20 +271,30 @@ mobile menu area here
     /*---------------------
     default  
     ----------------------*/
-    .banner-content h1,
-    .whatCan-title h1,
-    .app-dev-content .title h1,
-    .join .join-content h1{
-        font-size: 30px;
-        line-height: 45px;
+    /* index h1  */
+    .banner-content h1, 
+    .whatCan-title h1, 
+    .app-dev-content .title h1, 
+    .join .join-content h1 {
+        line-height: 32px;
+        font-size: 24px;
+        margin-bottom: 18px;
     }
-    /* 
-    all vector none,
-    .customers-carousel-inner::after,
-    .img-vector-none,
-     */
-    .img-vector-none{
-        display: none;
+    /* index p  */
+    .banner-content p, 
+    .whatCan-title p, 
+    .app-dev-content .title p, 
+    .join .join-content p {
+        line-height: 28px;
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    .whatCan .what-card h4 {
+        font-size: 20px;
+        margin: 18px 0px 16px;
+    }
+    .whatCan .what-card p {
+        font-size: 16px;
     }
     /*--------------------------------
     header area here  
@@ -248,9 +307,6 @@ mobile menu area here
     }
     .banner-inner .banner-vector {
         display: none;
-    }
-    .banner-content h1 {
-        margin-bottom: 30px;
     }
     .header-content .nav {
         display: block;
@@ -265,15 +321,29 @@ mobile menu area here
     /*--------------------------------
     what can area here  
     ----------------------------------*/
+    .whatCan-title {
+        margin: 0px 0px 60px;
+    }
     .whatCan .whatCan-img img {
-        margin-top: -64px;
+        margin-top: -102px;
     }
     /*--------------------------------
     app development area here  
     ----------------------------------*/
+    .app-dev {
+        padding: 80px 0px;
+    }
     .app-dev-card {
         grid-template-columns: 1fr;
         grid-gap: 20px;
+    }
+    .app-dev-content .card h4 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    .app-dev-card li.card h4 {
+        font-size: 20px;
+        margin-bottom: 18px;
     }
     .app-dev-card li:nth-child(1) {
         grid-row: auto;
@@ -289,6 +359,9 @@ mobile menu area here
     /*--------------------------------
     customers carousel area here 
     ----------------------------------*/
+    .customers {
+        padding: 80px 0px 150px;
+    }
     .customers-carousel-items .customers-Card {
         padding: 0px 30px;
     }
@@ -296,10 +369,28 @@ mobile menu area here
         display: none;
     }
     /*--------------------------------
+    join area here 
+    ----------------------------------*/
+    .join {
+        padding: 80px 0px;
+    }
+    /*--------------------------------
     recent-post area here 
     ----------------------------------*/
+    .recent-post {
+        padding: 80px 0px;
+    }
     .recent-post .cards div.card {
         padding: 80px 20px 80px;
+    }
+    .recent-post .cards div.card h4 {
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .recent-post .cards div.card p {
+        font-size: 16px;
+        margin-bottom: 20px;
     }
     /*--------------------------------
     subscribe area here 
@@ -310,6 +401,9 @@ mobile menu area here
     /*--------------------------------
     footer area here 
     ----------------------------------*/
+    .footer {
+        padding: 80px 0px;
+    }
     .footer .address hr {
         width: auto;
     }
@@ -325,11 +419,16 @@ mobile menu area here
     /*--------------------------------
     home-Masonry area here
     ----------------------------------*/
-    .home-Masonry br{
-        display: none;
+    .home-Masonry {
+        padding: 80px 0px;
     }
     .home-Masonry .card {
         margin: 0 0 30px;
+    }
+    .home-Masonry .card .content h4 {
+        margin-bottom: 18px;
+        font-size: 20px;
+        line-height: 28px;
     }
     .home-Masonry .card ul.data span {
         font-size: 10px;
@@ -337,6 +436,18 @@ mobile menu area here
     /*--------------------------
     #######---blog-details area here---########
     ----------------------------*/
+    .blog-right {
+        padding: 80px 0px;
+    }
+    .blog-right-right .thumb a {
+        font-size: 14px;
+        padding: 16px 20px;
+    }
+    .blog-right-right .content h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 30px 0px 20px;
+    }
     /* tst area here  */
     .blog-details .tst-content {
         margin: 40px 0px 0px 0px;
@@ -346,11 +457,13 @@ mobile menu area here
         width: 100%;
     }
     /* comments  */
+    div.comment-content span {
+        font-size: 20px;
+    }
     ul.comments li:nth-child(3) {
         margin-left: 20px;
     }
 }
-
 @media screen and (max-width: 340px){
     /*--------------------------
     #######---blog home area here---########
@@ -362,3 +475,6 @@ mobile menu area here
         font-size: 10px;
     }
 }
+/*============##############
+--------ends here----------
+##############=============*/
