@@ -1,32 +1,53 @@
+/* 
+Table Of Contents
+=========================
+- Default Typography
+- Custom Typography
+=========================
+*/
+
+
+/* 
+--------------------------
+- Custom Typography
+--------------------------
+*/
 /* google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 .row {
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
 }
+
 ul{
     margin-bottom: 0px;
     padding-left: 0px;
 }
+
 ul li{
     list-style: none;
 }
+
 a{
     font-family: 'Poppins', sans-serif;
     color: var(--dark);
     text-decoration: none;
 }
+
 p {
     font-family: 'Poppins', sans-serif;
     color: var(--dark);
 }
+
 h1,
 h2,
 h3,
@@ -36,18 +57,22 @@ h6{
     font-family: 'Poppins', sans-serif;
     color: var(--dark);
 }
+
 h1{
     font-size: 48px;
     font-weight: 600;
 }
+
 h4 {
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
 }
+
 span{
     color: var(--dark);
 }
+
 :root{
     --main-color:#ee285b;
     --main-color-rgba: rgba(238, 40, 91, 88%);

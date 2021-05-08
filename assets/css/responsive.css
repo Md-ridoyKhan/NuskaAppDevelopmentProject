@@ -1,6 +1,6 @@
-/*--------------------------------
-mobile menu area here  
-----------------------------------*/
+/*############################## 
+Extra large: 1400px------ 
+################################*/
 @media screen and (max-width: 1400px){
     /* header area here  */
     .banner {
@@ -24,6 +24,9 @@ mobile menu area here
         display: none;
     }
 }
+/*############################## 
+Extra large layout: 1200px------ 
+################################*/
 @media screen and (max-width: 1200px){
     /* banner area here  */
     .banner {
@@ -63,7 +66,10 @@ mobile menu area here
         margin: 30px 0px 20px;
     }
 }
-@media screen and (max-width: 991px){
+/*############################## 
+large layout: 992px------ 
+################################*/
+@media screen and (max-width: 992px){
     /* index h1  */
     .banner-content h1, .whatCan-title h1, .app-dev-content .title h1, .join .join-content h1 {
         line-height: 45px;
@@ -231,7 +237,17 @@ mobile menu area here
         max-width: 100%;
         margin-bottom: 120px;
     }
+    /*--------------------------
+    #######---contact us area here---########
+    ----------------------------*/
+    .contact-content {
+        grid-template-columns: 100%;
+        grid-gap: 60px;
+    }
 }
+/*############################## 
+Medium Layout: 768px------ 
+################################*/
 @media screen and (max-width: 768px){
     /*-------------
     all vector none and br none
@@ -266,7 +282,11 @@ mobile menu area here
     .tag-wrap ul li {
         margin: 0px 20px 30px 0px;
     }
+
 }
+/*############################## 
+Small Layout: 576px------ 
+################################*/
 @media screen and (max-width: 576px){
     /*---------------------
     default  
@@ -463,7 +483,45 @@ mobile menu area here
     ul.comments li:nth-child(3) {
         margin-left: 20px;
     }
+    /*--------------------------
+    #######---contact us area here---########
+    ----------------------------*/
+    .google-maps {
+        margin-top: 80px;
+    }
+    .contactUs {
+        padding: 80px 0px;
+    }
+    ul.contact-address .title h2 {
+        font-size: 24px;
+    }
+    ul.contact-address .title p {
+        font-size: 16px;
+    }
+    div.ape-content h4 {
+        font-size: 20px;
+    }
+    div.ape-content p {
+        font-size: 14px;
+    }
+    .contact-content .form-group button {
+        font-size: 18px;
+        padding: 12px 18px;
+    }
+
+
+
+
+
+
+
+
+
+
 }
+/*############################## 
+extra small: 340px------ 
+################################*/
 @media screen and (max-width: 340px){
     /*--------------------------
     #######---blog home area here---########
