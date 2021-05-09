@@ -84,24 +84,6 @@ span{
     --sweet-btn: #42bbe2;
     --form-banner: #fafafa;
     --hover-main: 0 0 15px rgb(238 40 91 / 50%);
-    /* h1  */
-    --h1-extra-large: 48px; 
-    --h1-large: 40px; 
-    --h1-medium: 36px; 
-    --h1-small: 30px;
-    --h1-extra-small: 28px;
-    /* h2  */
-    --h2-extra-large: 48px; 
-    --h2-large: 40px; 
-    --h2-medium: 36px; 
-    --h2-small: 30px;
-    --h2-extra-small: 28px;
-    /* h4  */
-    --h4-extra-large: 48px; 
-    --h4-large: 40px; 
-    --h4-medium: 36px; 
-    --h4-small: 30px;
-    --h4-extra-small: 28px;
     /* margin  */
     --margin-bottom: 70px;
 }
