@@ -1,14 +1,35 @@
+/*################################################ 
+
+
+RESPONSIVE DEVICE
+=============================
+=============================
+
+1. 1400px devices
+2. 1200 xlarge devices
+3. 992px large devices
+4. 768px medium devices
+5. 576px small devices
+ 
+
+###################################################*/
+
+
 /*############################## 
-Extra large: 1400px------ 
+Extra large: ---------
+1. 1400px devices
 ################################*/
 @media screen and (max-width: 1400px){
+    /*--------------------------
+    #######--- home area here---########
+    ----------------------------*/
     /* header area here  */
     .banner {
         padding: 220px 0px 120px;
     }
     .banner-content h1,
-    .app-dev-content .title h1 ,
-    .join .join-content h1 {
+    .app-dev-content .title h1,
+    .join .join-content h1{
         line-height: 60px;
         margin-bottom: 30px;
         font-size: 45px;
@@ -23,11 +44,25 @@ Extra large: 1400px------
     .recent-post .cards div.card h4 br{
         display: none;
     }
+    /*--------------------------
+    #######--- 404 area here ---########
+    ----------------------------*/
+    .error-content .content h2 {
+        font-size: 45px;
+        line-height: 55px;
+    }
 }
+
+
+
 /*############################## 
-Extra large layout: 1200px------ 
+Extra large: ------
+2. 1200 xlarge devices
 ################################*/
 @media screen and (max-width: 1200px){
+    /*--------------------------
+    #######--- home area here---########
+    ----------------------------*/
     /* banner area here  */
     .banner {
         padding: 200px 0px 120px;
@@ -59,23 +94,40 @@ Extra large layout: 1200px------
     .home-Masonry .Masonry {
         columns: 2;
     }
-    /* blog right area here  */
+    /*--------------------------
+    #######---blog right area here---########
+    ----------------------------*/
     .blog-right-right .content h2 {
         font-size: 24px;
         line-height: 40px;
         margin: 30px 0px 20px;
     }
+    /*--------------------------
+    #######--- 404 area here ---########
+    ----------------------------*/
+    .error-content .content h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
 }
+
+
+
 /*############################## 
-large layout: 992px------ 
+large layout: ----------- 
+3. 992px large devices
 ################################*/
 @media screen and (max-width: 992px){
-    /* index h1  */
+    /* h1  */
     .banner-content h1, .whatCan-title h1, .app-dev-content .title h1, .join .join-content h1 {
         line-height: 45px;
         font-size: 30px;
         margin-bottom: 18px;
     }
+    /*--------------------------
+    #######---home area here---########
+    ----------------------------*/
     /*--------------------- 
     header area here  
     ----------------------*/
@@ -244,9 +296,21 @@ large layout: 992px------
         grid-template-columns: 100%;
         grid-gap: 60px;
     }
+    /*--------------------------
+    #######--- 404 area here ---########
+    ----------------------------*/
+    .error-content .content h2 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
 }
+
+
+
 /*############################## 
-Medium Layout: 768px------ 
+Medium Layout: -----------
+4. 768px medium devices
 ################################*/
 @media screen and (max-width: 768px){
     /*-------------
@@ -258,6 +322,9 @@ Medium Layout: 768px------
     br {
         display: none;
     }
+    /*--------------------------
+    #######---home area here---########
+    ----------------------------*/
     /*--------------------------------
     customers carousel area here 
     ----------------------------------*/
@@ -282,16 +349,19 @@ Medium Layout: 768px------
     .tag-wrap ul li {
         margin: 0px 20px 30px 0px;
     }
-
 }
+
+
+
 /*############################## 
-Small Layout: 576px------ 
+Small Layout: --------
+5. 576px small devices
 ################################*/
 @media screen and (max-width: 576px){
     /*---------------------
     default  
     ----------------------*/
-    /* index h1  */
+    /* h1  */
     .banner-content h1, 
     .whatCan-title h1, 
     .app-dev-content .title h1, 
@@ -300,7 +370,7 @@ Small Layout: 576px------
         font-size: 24px;
         margin-bottom: 18px;
     }
-    /* index p  */
+    /* p  */
     .banner-content p, 
     .whatCan-title p, 
     .app-dev-content .title p, 
@@ -316,6 +386,9 @@ Small Layout: 576px------
     .whatCan .what-card p {
         font-size: 16px;
     }
+    /*--------------------------
+    #######---home area here---########
+    ----------------------------*/
     /*--------------------------------
     header area here  
     ----------------------------------*/
@@ -431,13 +504,13 @@ Small Layout: 576px------
     #######---blog home area here---########
     ----------------------------*/
     /*--------------------------------
-    banner-blog area here
+    wbanner-blog area here
     ----------------------------------*/
     .banner-blog ul.breadcumb li {
         font-size: 26px;
     }
     /*--------------------------------
-    home-Masonry area here
+    home masonary area here
     ----------------------------------*/
     .home-Masonry {
         padding: 80px 0px;
@@ -508,31 +581,18 @@ Small Layout: 576px------
         font-size: 18px;
         padding: 12px 18px;
     }
-
-
-
-
-
-
-
-
-
-
-}
-/*############################## 
-extra small: 340px------ 
-################################*/
-@media screen and (max-width: 340px){
     /*--------------------------
-    #######---blog home area here---########
+    #######--- 404 area here ---########
     ----------------------------*/
-    /*--------------------------------
-    home-card area here
-    ----------------------------------*/
-    .home-card .card ul.data span {
-        font-size: 10px;
+    .error-content .content h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .error-content .content a {
+        font-size: 18px;
     }
 }
 /*============##############
---------ends here----------
+--------RESPONSIVE ENDS HERE----------
 ##############=============*/
