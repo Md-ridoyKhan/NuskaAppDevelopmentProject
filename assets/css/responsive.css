@@ -584,10 +584,12 @@ Small Layout: --------
     /*--------------------------
     #######--- 404 area here ---########
     ----------------------------*/
+    .error-content .img {
+        margin-bottom: 40px;
+    }
     .error-content .content h2 {
         font-size: 24px;
         line-height: 32px;
-        margin-bottom: 20px;
     }
     .error-content .content a {
         font-size: 18px;
