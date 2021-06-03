@@ -1222,9 +1222,6 @@ div.nav-toggler.active span::after{
     border: 1px solid transparent;
     box-shadow: 0 0 15px rgb(238 40 91 / 50%);
 }
-.home-Masonry .card .thumb{
-    overflow: hidden;
-}
 .home-Masonry .card .thumb img {
     width: 100%;
     cursor: pointer;
@@ -1233,7 +1230,7 @@ div.nav-toggler.active span::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 20px 20px;
+    margin: 40px 20px 16px;
 }
 .home-Masonry .card ul.data span{
     font-size: 14px;
